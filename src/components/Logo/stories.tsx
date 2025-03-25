@@ -15,7 +15,7 @@ export default {
       control: 'boolean'
     }
   }
-} as Meta
+} as Meta<typeof Logo>
 
 export const Default: StoryObj<LogoProps> = {
   args: {
