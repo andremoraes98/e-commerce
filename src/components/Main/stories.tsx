@@ -7,6 +7,6 @@ export default {
   parameters: {
     layout: 'fullscreen'
   }
-} as Meta
+} as Meta<typeof Main>
 
 export const Default: StoryObj = {}
