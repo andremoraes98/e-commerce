@@ -38,4 +38,13 @@ describe('<Logo />', () => {
 
     expect(logoWrapper).toHaveStyle({ height: '5.9rem', width: '20rem' })
   })
+
+  it('should render logo without text if hideOnMobile', () => {
+    renderWithTheme(<Logo $hideOnMobile />)
+
+    const logo = screen.getByLabelText(/Won Games Logo/i)
+    const logoWrapper = logo.parentElement
+
+    expect(logoWrapper).toHaveStyleRule('width', '11rem')
+  })
 })

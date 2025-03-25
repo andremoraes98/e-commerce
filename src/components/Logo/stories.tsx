@@ -10,6 +10,9 @@ export default {
     },
     size: {
       control: 'select'
+    },
+    $hideOnMobile: {
+      control: 'boolean'
     }
   }
 } as Meta
@@ -17,6 +20,7 @@ export default {
 export const Default: StoryObj<LogoProps> = {
   args: {
     color: 'black',
+    $hideOnMobile: false,
     size: 'normal'
   }
 }
