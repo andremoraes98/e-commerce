@@ -11,10 +11,10 @@ export default {
     color: {
       control: 'select'
     },
-    lineBottom: {
+    $lineBottom: {
       control: 'boolean'
     },
-    lineLeft: {
+    $lineLeft: {
       control: 'boolean'
     }
   }
@@ -24,7 +24,7 @@ export const Default: StoryObj<typeof Heading> = {
   args: {
     children: 'Heading',
     color: 'black',
-    lineBottom: false,
-    lineLeft: false
+    $lineBottom: false,
+    $lineLeft: false
   }
 }
